@@ -554,6 +554,7 @@ public class CrudEstoque {
                         case 2:
                             if (f.exists()) {
                                 alterar();
+                                escreverArquivo();
                             }
 
                             else {
@@ -564,6 +565,7 @@ public class CrudEstoque {
                         case 3:
                             if (f.exists()) {
                                 deletar();
+                                escreverArquivo();
                             } else {
                                 System.out.println("Nao ha o que deletar.");
 
